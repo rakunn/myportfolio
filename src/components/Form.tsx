@@ -7,7 +7,7 @@ export const Form = () => {
         const myForm = event.target;
         const formData = new FormData(myForm) as FormData | any;
 
-        formData.append("form-name", myForm.name);
+        formData.append("form-name", "contact");
 
         fetch("/", {
             method: "POST",
@@ -20,6 +20,7 @@ export const Form = () => {
 
     return (
         <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <input type="hidden" name="form-name" value="contact"/>
             <p>
                 <label>Your Name: <input type="text" name="name"/></label>
             </p>
