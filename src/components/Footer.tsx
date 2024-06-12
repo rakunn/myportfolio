@@ -30,7 +30,7 @@ export function Footer() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
                 {/* <NavLink href="/speaking">Speaking</NavLink> */}
-                <NavLink href="/uses">My Setup</NavLink>
+                <NavLink href="/my-setup">My Setup</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Rafał Bagrowski | Codeream | All rights

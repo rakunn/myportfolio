@@ -140,8 +140,8 @@ function MobileNavigation(
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/articles">Articles</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
+                {/*<MobileNavItem href="/speaking">Speaking</MobileNavItem>*/}
+                <MobileNavItem href="/my-setup">My Setup</MobileNavItem>
               </ul>
             </nav>
           </PopoverPanel>
