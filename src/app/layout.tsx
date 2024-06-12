@@ -27,13 +27,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className="flex h-full bg-zinc-50 dark:bg-black">
-        <Providers>
-          <div className="flex w-full">
-            <Layout>{children}</Layout>
-          </div>
-        </Providers>
-      </body>
+    <body className="flex h-full bg-zinc-50 dark:bg-black">
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name"/>
+      <input type="email" name="email"/>
+      <textarea name="message"></textarea>
+    </form>
+    <Providers>
+      <div className="flex w-full">
+        <Layout>{children}</Layout>
+      </div>
+    </Providers>
+    </body>
     </html>
   )
 }
