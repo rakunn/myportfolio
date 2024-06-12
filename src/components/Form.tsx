@@ -7,8 +7,6 @@ export const Form = () => {
         const myForm = event.target;
         const formData = new FormData(myForm) as FormData | any;
 
-        formData.append("form-name", "contact");
-
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
