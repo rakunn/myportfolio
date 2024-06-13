@@ -1,10 +1,12 @@
 "use client"
-
+import { useRouter } from 'next/navigation'
 import {Button} from "@/components/Button";
 import React from "react";
 import {MailIcon} from "@/components/MailIcon";
 
 export const Form = () => {
+    const router = useRouter();
+
     const handleSubmit = (event: any) => {
         event.preventDefault();
 
@@ -16,7 +18,7 @@ export const Form = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => console.log ("/thank-you/"))
+            .then(() => router.push("/thank-you/"))
             .catch((error) => alert(error));
     };
 
